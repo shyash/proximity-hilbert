@@ -3,6 +3,7 @@ export interface Advertisement {
 	lattitude: number;
 	longitude: number;
 	content: string;
+	imageSrc: string;
 	bucket: Schema.Types.ObjectId;
 }
 export interface AdvertisementDocument extends Advertisement, Document {}

@@ -38,6 +38,7 @@ export const add = async (req: any, res: any) => {
 		const lattitude: number = req.body.lattitude;
 		const longitude: number = req.body.longitude;
 		const content: string = req.body.content;
+		const imageSrc: string = req.body.imageSrc;
 		const east: number = 77.3981;
 		const west: number = 76.8281;
 		const north: number = 28.91;
@@ -71,6 +72,7 @@ export const add = async (req: any, res: any) => {
 			lattitude,
 			longitude,
 			content,
+			imageSrc,
 			bucket: fetchedSquare?._id,
 		});
 
