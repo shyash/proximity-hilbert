@@ -5,7 +5,7 @@ dotenv.config();
 import { connectDB } from './config/db';
 import routes from './routes';
 const app: Application = express();
-const PORT: number | string = process.env.PORT || 8800;
+const PORT: any = process.env.PORT || 8800;
 const IP: string = process.env.IP || '0.0.0.0';
 connectDB();
 app.use(cors());
